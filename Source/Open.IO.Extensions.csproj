@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>electricessence</Authors>
+		<Description>
+			IAsyncEnumerable extensions for handling streams.
+
+			Part of the "Open" set of libraries.
+		</Description>
+		<Copyright>© electricessence (Oren F.) All rights reserved.</Copyright>
+		<PackageProjectUrl>https://github.com/Open-NET-Libraries/Open.Text.CSV/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Open-NET-Libraries/Open.Text.CSV/</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Stream, TextReader, PipeReader, IAsyncEnumerable</PackageTags>
+		<Version>1.0.0</Version>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageIcon>logo.png</PackageIcon>  </PropertyGroup>
+
+  <ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+		<PackageReference Include="System.IO.Pipelines" Version="5.0.1" />
+  </ItemGroup>
+
+</Project>
