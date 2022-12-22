@@ -5,6 +5,15 @@ VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Open.IO.Extensions", "Source\Open.IO.Extensions.csproj", "{D4D61853-ED65-4DB3-9D74-962843ADC9A1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Open.IO.Extensions.Tests", "Open.IO.Extensions.Tests\Open.IO.Extensions.Tests.csproj", "{845E56F8-C772-412D-ABF9-7374C153DA8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2E119909-4C4C-4769-A671-984F99C98D6A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Open.IO.Extensions.Benchmarks", "Open.IO.Extensions.Benchmarks\Open.IO.Extensions.Benchmarks.csproj", "{3B603F5F-D7D4-4852-8B6C-A9D8C8717E57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,14 @@ Global
 		{D4D61853-ED65-4DB3-9D74-962843ADC9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4D61853-ED65-4DB3-9D74-962843ADC9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4D61853-ED65-4DB3-9D74-962843ADC9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845E56F8-C772-412D-ABF9-7374C153DA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845E56F8-C772-412D-ABF9-7374C153DA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845E56F8-C772-412D-ABF9-7374C153DA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845E56F8-C772-412D-ABF9-7374C153DA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B603F5F-D7D4-4852-8B6C-A9D8C8717E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B603F5F-D7D4-4852-8B6C-A9D8C8717E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B603F5F-D7D4-4852-8B6C-A9D8C8717E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B603F5F-D7D4-4852-8B6C-A9D8C8717E57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
