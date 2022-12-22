@@ -1,8 +1,8 @@
 using BenchmarkDotNet.Attributes;
+using System.Buffers;
+using System.Diagnostics.CodeAnalysis;
 using System.IO.Pipelines;
 using System.Text;
-using System.Diagnostics.CodeAnalysis;
-using System.Buffers;
 
 namespace Open.IO.Extensions.Tests;
 
@@ -40,7 +40,7 @@ public class TextReaderExtensionsTests : IDisposable
 
 	private static Stream GetStream(bool useFile = true)
 	{
-		if(useFile)
+		if (useFile)
 			return File.OpenRead("TestData.csv");
 
 		// Create a new MemoryStream object
@@ -72,7 +72,7 @@ public class TextReaderExtensionsTests : IDisposable
 	public async Task DualBufferReadAsync()
 	{
 		using var reader = new StreamReader(_stream);
-		await foreach(var e in reader.DualBufferReadAsync())
+		await foreach (var e in reader.DualBufferReadAsync())
 		{
 			_sb.Append(e.Span);
 		}

@@ -10,9 +10,9 @@ namespace Open.IO.Extensions;
 
 public static class PipeReaderExtensions
 {
+#if NET7_0_OR_GREATER
 	const int DEFAULT_BUFFER_SIZE = 1024;
 
-#if NET7_0_OR_GREATER
 	public static async IAsyncEnumerable<ReadOnlyMemory<char>> ReadLinesAsync(
 		this PipeReader reader,
 		Encoding? encoding = null,
@@ -111,7 +111,6 @@ public static class PipeReaderExtensions
 			writer.Write(mem.Span);
 	}
 #endif
-
 
 	/** The following method is based upon:
 	 ** https://github.com/ByteTerrace/ByteTerrace.Ouroboros.Core/blob/702facd67bf9e9840ac8e1fe9c40dceec434f262/PipeReaderExtensions.cs#L9-L31
